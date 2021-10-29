@@ -1,11 +1,11 @@
 const { Client, MessageEmbed } = require("discord.js");
 
 const client = new Client();
-const prefix = "!";
+const prefix = "!"; //prefix
 
 var express = require('express'),
     app = express(),
-    port = process.env.PORT || 4000;
+    port = process.env.PORT || 4000; //sunucu portu | server starting port
  
 client.on("message", async message => {
   if (!message.content.startsWith(prefix) || message.author.bot) return;
@@ -36,20 +36,20 @@ var channelId = db.fetch("kanal")
 
 
 app.listen(4444,function(){  
-  console.log("Sunucu 4444 portu ile aktif; http://localhost:4444");  
+  console.log("Sunucu 4444 portu ile aktif; http://localhost:4444");  //botun aktif olduğuna dair log. | log that the bot is active.
 });  
 
 client.on("message", message => {
   if (message.content === "ping") {
     message.channel.send("Pong!" + client.ping + "ms");
   }
-  if (message.content === "!setchannel") {
+  if (message.content === "!setchannel") {  //You can add the channel you want to send a message to with the !setchannel command. | mesaj göndermek istediğiniz kanalı !setchannel komutu ile ekleyebilirsiniz.
     db.set("kanal",message.channel.id)
     message.channel.send("Kanal ayarlandı.");
   }
   if (message.content === prefix + "reboot") {
-    if (message.author.id === "895885867296653312") { //bot sahibi discord id | bot owner's user id.
-      message.channel.send("🐬 Bot yeniden başlatılıyor..").then(msg => {
+    if (message.author.id === "895885867296653312") { //bot sahibi discord id | bot owner's user id. 
+      message.channel.send("🐬 Bot yeniden başlatılıyor..").then(msg => { //restart message.
         console.log("Yeniden başlatılıyor...");
         process.exit(0);
       });
