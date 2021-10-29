@@ -48,25 +48,25 @@ client.on("message", message => {
     message.channel.send("Kanal ayarlandı.");
   }
   if (message.content === prefix + "reboot") {
-    if (message.author.id === "895885867296653312") {
+    if (message.author.id === "895885867296653312") { //bot sahibi discord id | bot owner's user id.
       message.channel.send("🐬 Bot yeniden başlatılıyor..").then(msg => {
         console.log("Yeniden başlatılıyor...");
         process.exit(0);
       });
     } else
       message.channel.send(
-        "Maalesef bu komutu yanlızca <@895885867296653312> kullanabilir."
+        "Maalesef bu komutu yanlızca <@895885867296653312> kullanabilir." //bot sahibi discord id | bot owner's user id.
       );
   }
 });
-app.get('/post/:isim', function (req, res) {
+app.get('/post/', function (req, res) { // /post/buraya_kanala_göndermek_istediğiniz_yazıyı_yazın. | /post/Type_post_post_post_to_channel here.
   res.send(req.params.isim);
   client.channels.cache.get(db.fetch("kanal")).send(req.params.isim)
  
 });
 const activities_list = [
-    "✨ Ardayı sikiyorum. ÇAT ÇAT!",
-    "✨ Ardayı sikiyorum. ÇAT ÇAT!"
+        "✨ Notification bot @c3n4p",
+        "✨ Notification bot @c3n4p",
     ]; 
 client.on('ready', () => {
     setInterval(() => {
@@ -75,4 +75,4 @@ client.on('ready', () => {
     }, 2000); 
 });
 
-client.login("OTAxNzY2MTY5NTg4MDMxNDg4.YXUpMA.ZLgGFwDZ48Mszi4m6JIU55l1JeU");
+client.login("TOKEN_HERE");
