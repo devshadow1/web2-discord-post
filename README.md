@@ -8,9 +8,9 @@ Gereksinimler;
 1 - Node.js
 2-  npmjs > discord.js > chalk > wio.db > http > express
 
-ek olarak bir sorununuz olursa discord üzerinden iletişime geçebilirsiniz. 
+ek olarak bir sorununuz olursa sitem üzerinden iletişime geçebilirsiniz. 
 
-Discord: devshadow#0740
+https://c3n4p.com
 
 -----
 ENGLISH
@@ -21,6 +21,6 @@ Requirements;
 1 - Node.js
 2- npmjs > discord.js > chalk > wio.db > http > express
 
-In addition, if you have a problem, you can contact via discord.
+In addition, if you have a problem, you can contact via my site.
 
-Discord: devshadow#0740
+https://c3n4p.com
