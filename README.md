@@ -10,7 +10,7 @@ Gereksinimler;
 
 ek olarak bir sorununuz olursa sitem üzerinden iletişime geçebilirsiniz. 
 
-https://c3n4p.com
+https://c3n4p.site
 
 -----
 ENGLISH
@@ -23,4 +23,4 @@ Requirements;
 
 In addition, if you have a problem, you can contact via my site.
 
-https://c3n4p.com
+https://c3n4p.site
